@@ -1,0 +1,24 @@
+{
+  "name": "play-music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@nuclearplayer/ytdl-core": "^4.16.11",
+    "async": "^3.2.6",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.14.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "play-sound": "^1.1.6",
+    "youtubei": "^1.6.7"
+  }
+}
