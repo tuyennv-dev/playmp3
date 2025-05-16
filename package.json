@@ -12,13 +12,18 @@
   "dependencies": {
     "@nuclearplayer/ytdl-core": "^4.16.11",
     "async": "^3.2.6",
+    "audic": "^3.0.2",
     "express": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.3",
     "fs": "^0.0.1-security",
     "mongoose": "^8.14.3",
+    "mp3-duration": "^1.1.0",
+    "music-metadata": "^11.2.2",
     "node-telegram-bot-api": "^0.66.0",
     "nodemon": "^3.1.10",
     "path": "^0.12.7",
     "play-sound": "^1.1.6",
+    "sound-play": "^1.1.0",
     "youtubei": "^1.6.7"
   }
 }
