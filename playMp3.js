@@ -6,7 +6,7 @@ async function playMp3(link){
     console.log("đang phát link", link)
     const dec = await getDoDaiMp3(link)
     console.log("🚀 ~ :8 ~ playMp3 ~ dec:", dec)
-    await delay(dec + 1 * 1000 * 60 * 5)
+    await delay(dec * 1000 + 1 * 1000 * 60 * 5)
     exec(`mplayer ${link}`);
 
 }
