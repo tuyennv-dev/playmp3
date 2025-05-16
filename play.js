@@ -12,7 +12,6 @@ async function play(bot, chatId) {
 
   for (let i = 0; i < 20; i++) {
     await bot.sendMessage(chatId, `Chạy lần ${i + 1}`);
-
     const mp3 = await Link.findOneAndUpdate(
       {
         numberRun: 0,
