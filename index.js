@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 
-play(bot,chatId )
+// play(bot,chatId )
 const queue = async.queue(async (msg, callback) => {
   if (msg.text.includes("https://www.youtube.com/")) {
     const newLink = new Link({ link: msg.text, numberRun: 0 });
