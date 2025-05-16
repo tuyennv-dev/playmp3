@@ -1,5 +1,5 @@
-const ffmpeg = require("fluent-ffmpeg");
-var mp3Duration = require("mp3-duration");
+// const ffmpeg = require("fluent-ffmpeg");
+// var mp3Duration = require("mp3-duration");
 const fs = require("fs")
 const getMP3Duration = require('get-mp3-duration')
 const { parseFile } = require('music-metadata');

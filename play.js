@@ -14,6 +14,7 @@ async function play(bot, chatId) {
   await playMp3(pathChaoCo, 200);
 
   for (let i = 0; i < 20; i++) {
+    try{
     const now = DateTime.now().setZone('Asia/Bangkok');
     if (now.hour >= 21) {
         break;
@@ -40,13 +41,17 @@ async function play(bot, chatId) {
     await bot.sendMessage(chatId, `Bắt đầu chạy: ${titleVideo}`);
     const pathMp3 = path.join(__dirname, resDowloadMp3);
     const playVoice = await playMp3(pathMp3,duraVideo);
-    await deleteMp3(pathMp3);
+    await deleteMp3(pathMp3); 
+    }catch(err){
+    await bot.sendMessage(chatId, err);
+
+    }
   }
   let pathThongbao = path.join(__dirname, 'thongbaodingu.mp3')
   await playMp3(pathThongbao, 10 )
   let pathBai1 = path.join(__dirname, 'bac_1.mp3')
     await playMp3(pathBai1, 200 )
-    
+
 
 }
 module.exports = play;
